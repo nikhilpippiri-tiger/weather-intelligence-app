@@ -1,0 +1,6 @@
+{
+  "name": "Weather Intelligence",
+  "description": "Smart weather dashboard with real-time conditions, 7-day forecast, interactive temperature trend charts, and dynamic planning recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
