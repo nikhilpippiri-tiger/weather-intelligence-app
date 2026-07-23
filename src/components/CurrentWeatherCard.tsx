@@ -51,6 +51,11 @@ export const CurrentWeatherCard: React.FC<CurrentWeatherCardProps> = ({
                 {location.countryCode}
               </span>
             )}
+            {weatherData.isFallback && (
+              <span className="px-2 py-0.5 text-xs font-semibold bg-amber-50 text-amber-700 rounded-md border border-amber-200" title="Live weather endpoint unreachable. Showing estimated cached weather.">
+                Estimated / Offline Mode
+              </span>
+            )}
           </div>
           <p className="text-xs sm:text-sm text-slate-500 font-medium ml-1 mt-1.5">
             {location.admin1 ? `${location.admin1}, ` : ''}{location.country || 'Global Location'}

@@ -48,6 +48,7 @@ export interface WeatherData {
   hourly: HourlyForecast[];
   timezone: string;
   fetchedAt: Date;
+  isFallback?: boolean;
 }
 
 export type TemperatureUnit = 'C' | 'F';
